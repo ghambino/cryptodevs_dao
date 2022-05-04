@@ -1,0 +1,71 @@
+.main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", "Courier New", Courier, monospace;
+}
+.image {
+  height: 50%;
+  width: 80%;
+  margin-left: 2rem;
+}
+.title {
+  font-size: 2.5rem;
+  margin: 2rem 0rem;
+  color: rgb(52, 52, 138);
+}
+.description {
+  line-height: 1;
+  font-size: 1.3rem;
+  margin: 2rem 0rem;
+}
+.button {
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+.button2 {
+  border-radius: 4px;
+  background-color: indigo;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 2%;
+  margin-top: 1rem;
+}
+
+.proposalCard {
+  width: fit-content;
+  margin-top: 0.25rem;
+  border: black 2px solid;
+  flex: 1;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.flex {
+  flex: 1;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
