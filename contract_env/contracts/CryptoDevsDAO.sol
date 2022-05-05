@@ -124,7 +124,7 @@ contract CryptoDevsDAO is Ownable {
             nftMarketplace.purchase{value: nftPrice}(proposal.nftTokenId);
         }
 
-        proposal.executed == true;
+        proposal.executed = true;
     }
 
     function withdrawEther() external onlyOwner {

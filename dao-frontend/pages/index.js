@@ -296,7 +296,7 @@ export default function Home() {
                         Vote NAY
                     </button>
                   </div>
-                ): unit.deadline < Date.now() && !unit.executed ? (
+                ): unit.deadline.getTime() < Date.now() && !unit.executed ? (
                   <div>
                     <button onClick={() => executeProposal(unit.proposalId)} className={styles.button2}>
                       Execute Proposal{" "}
